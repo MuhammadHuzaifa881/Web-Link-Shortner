@@ -1,0 +1,10 @@
+const [originalWebsite,setOriginalWebsite]=useState('');
+    const [expiryDate,setExpiryDate]=useState('');
+    const HandlemeWitCare=()=>{
+        useEffect(()=>{
+            localStorage.setItem('originalWebsite',JSON.stringify(originalWebsite))
+        },[originalWebsite])
+        useEffect(()=>{
+            localStorage.setItem('expiryDate',JSON.stringify(expiryDate))
+        },[expiryDate])
+    }
